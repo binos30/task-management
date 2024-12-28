@@ -1,0 +1,17 @@
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">
+        <%= link_to task.title, task, class: "stretched-link", data: { turbo_frame: "_top" } %>
+      </h5>
+      <div class="card-text line-clamp">
+        <%= task.description %>
+      </div>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        Status: <span class="<%= status_class(task.status) %>"><%= task.status.humanize %></span>
+      </small>
+    </div>
+  </div>
+</div>

@@ -29,3 +29,9 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    attributes:
+      task:
+        statuses:
+          undone: "Undone"
+          completed: "Completed"
